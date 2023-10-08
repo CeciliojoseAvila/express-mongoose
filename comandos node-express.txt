@@ -1,0 +1,133 @@
+///////////////////////             PROYECTO NODE EN UDEMY  /////////////////////////////
+
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm init
+
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i express --save
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i mongoose --save
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i multer --save
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i validator --save
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i cors --save
+C:\Users\GERMAN\OneDrive\Escritorio\api-rest-node> npm i nodemon --save
+
+/////////////////////
+////
+ ` <div>
+        <h1> Probando ruta NodeJs</h1>
+        <p> Creando api rest con NodeJs</p>
+        <ul>
+        <li> Master en React </li>
+        <li> Master en PHP </li>        
+        </ul>
+      </div>`
+
+/////////////////
+
+
+C:\Program Files\MongoDB\Server\6.0\bin > mongod.exe   (enter para ejecutar, e ir a compass y crear la DB)
+
+Prueba de rutas en Postman:
+
+GET -----> http://localhost:3900/probando
+GET -----> http://localhost:3900/
+
+GET ----> http://localhost:3900/api/ruta-de-prueba
+
+GET ---------> http://localhost:3900/api/curso
+
+POST ---------> http://localhost:3900/api/crear
+
+
+
+//////////////////////////////////////////////////
+cecilioavila
+ppnQXb79ie8oXa9W
+
+mongodb+srv://cecilioavila614:<password>@cluster0.yqvrepi.mongodb.net/
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+NODE Y EXPRESS:
+
+-----> npm i d3-time
+-----> npm i init
+
+1) index.js:
+
+http://localhost:3000/api/cars/list
+
+-->
+app.get('/api/cars/', (req, res)=> {
+    res.send(coches)
+})
+
+---> http://localhost:3003/api/cars/
+http://localhost:3003/api/cars/ (Mercedes, BMW, Audi)
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+METODO POST:
+
+app.post('/api/cars', (req, res)=>{
+    var carId = coches.length;
+    var coche ={
+        id: carId,
+        company: req.body.company,
+        model: req.body.model,
+        year: req.body.year
+    }
+    coches.push(coche)
+    res.status(201).send(coche)
+
+})
+
+EN POSTMAN:
+post --> localhost:3003/api/cars2
+
+body:
+{
+        "company": "",
+        "model": "Leon",
+        "year": "2020"
+    }
+
+
+R/: Introduce una empresa correcta
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+npm i express-validator
+
+
+/// PUT:
+
+localhost:3003/api/cars/1
+
+{
+        "company": "SEAT2",
+        "model": "Leon2",
+        "year": "2022"
+
+}
+
+
+NUEVO GET EN POSTMAN :
+localhost:3003/api/cars
+
+
+DELETE ---> localhost:3003/api/cars/1
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+ middleware:
+
+morgan: npm i morgan
+
+
+
+
