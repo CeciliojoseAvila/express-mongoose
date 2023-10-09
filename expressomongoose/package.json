@@ -1,0 +1,20 @@
+{
+  "name": "expressfirst",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Cecilio Avila",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^^4.18.2",
+    "express-validator": "^6.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.20",
+    "morgan": "^1.9.1"
+  }
+}
